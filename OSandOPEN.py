@@ -1,0 +1,15 @@
+import os
+a = os.path.join('usr', 'bin', 'spam')
+print(a)
+print(os.getcwd())
+print(os.path.abspath('.'))
+print(os.path.relpath('C:\\Windows', 'C:\\'))
+p ='a\\b\\c'
+print(p.split(os.path.sep))
+print(os.path.getsize('C:\\Users\\Александра\\Desktop\\админ постгре\\Лабораторная работа 3.docx'))
+print(os.listdir('C:\\Users\\Александра\\Desktop\\админ постгре'))
+temp = open('C:\\Users\\Александра\\Desktop\\админ постгре\\1.txt', 'a', encoding="utf-8")
+temp.write('\nПетя')
+temp.close()
+temp = open('C:\\Users\\Александра\\Desktop\\админ постгре\\1.txt', encoding="utf-8")
+print(temp.readlines())
